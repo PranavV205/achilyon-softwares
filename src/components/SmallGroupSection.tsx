@@ -11,15 +11,15 @@ function SmallgroupSection() {
 
             <div className='flex flex-row items-center pt-12'>
                 <div className='flex flex-row items-center gap-4'>
-                    <Buildings className="text-purple-600 w-16 h-16" />
+                    <Buildings className="text-secondary w-16 h-16" />
                     <p>Building community and redefining travel since 1990.</p>
                 </div>
                 <div className='flex flex-row items-center gap-4'>
-                    <GlobeHemisphereWest className="text-purple-600 w-16 h-16" />
+                    <GlobeHemisphereWest className="text-secondary w-16 h-16" />
                     <p>For every traveller. On every continent. Yup, even Antarctica.</p>
                 </div>
                 <div className='flex flex-row items-center gap-4'>
-                    <Heart className="text-purple-600 w-16 h-16" />
+                    <Heart className="text-secondary w-16 h-16" />
                     <p>Uplifting communities everywhere we go. Period.</p>
                 </div>
             </div>

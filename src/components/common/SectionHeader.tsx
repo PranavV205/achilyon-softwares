@@ -11,8 +11,8 @@ function SectionHeader({ subtitle, title, buttonText }: SectionHeaderProps) {
     return (
         <div className='flex flex-row justify-between items-end gap-2   '>
             <div className='flex flex-col'>
-                {subtitle && <p className='text-[#6A52B3] font-black text-xs md:text-lg'>{subtitle}</p>}
-                <p className='text-[#4E348F] font-black text-md md:text-4xl'>{title}</p>
+                {subtitle && <p className='text-secondary font-black text-xs md:text-lg'>{subtitle}</p>}
+                <p className='text-primary font-black text-md md:text-4xl'>{title}</p>
             </div>
 
             {buttonText && (

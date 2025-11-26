@@ -47,7 +47,7 @@ function DealCard({ deal }) {
                     <p className="text-sm">{`on ${deal.start}`}</p>
                 </div>
                 <Separator orientation="horizontal" className="my-3 h-px" />
-                <p className="text-[#4E348F] underline font-bold text-right cursor-pointer hover:text-[#3d2871] text-sm">View tour</p>
+                <p className="text-primary underline font-bold text-right cursor-pointer hover:text-[#3d2871] text-sm">View tour</p>
             </CardContent>
         </Card>
     )

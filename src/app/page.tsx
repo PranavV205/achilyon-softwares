@@ -18,14 +18,14 @@ export default function Home() {
   useEffect(() => {
     const fetchAll = async () => {
       try {
-        const [dealsRes] = await Promise.all([
+        const [dealsRes, destinationsRes] = await Promise.all([
           api.get("/deals"),
-          // api.get("/destinations"),
+          api.get("/destinations"),
         ]);
 
         setData({
           deals: dealsRes.data,
-          // blogs: destinationsRes.data,
+          destinations: destinationsRes.data,
         });
       } catch (err) {
         console.error("Home API error:", err);
@@ -53,7 +53,7 @@ export default function Home() {
 
       <HeroDeals deals={data.deals} />
       <SmallgroupSection />
-      <DestinationsSection />
+      <DestinationsSection destinations={data.destinations} />
       <ReasonSection />
 
     </div>
