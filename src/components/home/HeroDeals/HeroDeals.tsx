@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react"
 import DealCard from "./DealCard"
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
 import SectionHeader from "@/components/common/SectionHeader"

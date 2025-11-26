@@ -1,11 +1,12 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { UserCircleIcon } from 'lucide-react'
 
 interface ReasonCardProps {
-    reason: any
+    title: string;
+    icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+    description: string;
 }
 
-function ReasonCard({ reason }: ReasonCardProps) {
+function ReasonCard({ reason }: { reason: ReasonCardProps }) {
     return (
         <Card className='bg-card p-4 md:p-8'>
             <CardHeader className='px-0'>
