@@ -5,13 +5,20 @@ import HeroDeals from "@/components/home/HeroDeals/HeroDeals";
 import ReasonSection from "@/components/home/ReasonsSection/ReasonSection";
 import SmallgroupSection from "@/components/SmallGroupSection";
 import api from "@/lib/apiClient";
+import { DealResponse } from "@/lib/interfaces/deal.interface";
+import { DestinationResponse } from "@/lib/interfaces/destination.interface";
 import axios from "axios";
 import { useEffect, useState } from "react";
+
+interface HomeData {
+  deals: DealResponse;
+  destinations: DestinationResponse;
+}
 
 
 export default function Home() {
 
-  const [data, setData] = useState({});
+  const [data, setData] = useState<HomeData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
@@ -51,9 +58,9 @@ export default function Home() {
   return (
     <div className="min-h-screen">
 
-      <HeroDeals deals={data.deals} />
+      <HeroDeals deals={data?.deals} />
       <SmallgroupSection />
-      <DestinationsSection destinations={data.destinations} />
+      <DestinationsSection destinations={data?.destinations} />
       <ReasonSection />
 
     </div>

@@ -2,8 +2,9 @@ import Container from '@/components/common/Container'
 import SectionHeader from '@/components/common/SectionHeader'
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
 import DestinationCard from './DestinationCard'
+import { DestinationResponse } from '@/lib/interfaces/destination.interface'
 
-function DestinationsSection({ destinations }) {
+function DestinationsSection({ destinations }: { destinations: DestinationResponse | undefined }) {
     console.log(destinations)
     return (
         <Container variant="tertiary">
@@ -13,7 +14,7 @@ function DestinationsSection({ destinations }) {
             />
             <ScrollArea className="w-full mt-6 pb-2">
                 <div className="flex gap-8">
-                    {destinations.data.length > 0 && destinations.data.map(destination => (
+                    {destinations && destinations.data.length > 0 && destinations.data.map(destination => (
                         <div key={destination.id}>
                             <DestinationCard destination={destination} key={destination.id} />
                         </div>

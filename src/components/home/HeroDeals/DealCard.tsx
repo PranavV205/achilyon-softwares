@@ -1,10 +1,11 @@
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
+import { Deal } from "@/lib/interfaces/deal.interface"
 import { Calendar, MapPin } from "lucide-react"
 import Image from "next/image"
 
-function DealCard({ deal }) {
+function DealCard({ deal }: { deal: Deal }) {
     return (
         <Card className="w-[320px] sm:w-[380px] lg:w-[420px]">
             <CardContent className="px-0">

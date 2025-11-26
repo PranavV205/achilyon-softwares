@@ -9,7 +9,7 @@ function SmallgroupSection() {
                 title="Small group adventures that bring the world closer"
             />
 
-            <div className='flex flex-row items-center pt-12'>
+            <div className='flex flex-col gap-1 sm:flex-row sm:gap-2 items-center pt-12'>
                 <div className='flex flex-row items-center gap-4'>
                     <Buildings className="text-secondary w-16 h-16" />
                     <p>Building community and redefining travel since 1990.</p>

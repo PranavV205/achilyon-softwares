@@ -46,7 +46,7 @@ function ReasonSection() {
                 buttonText='Learn more'
             />
 
-            <div className='grid grid-cols-3 gap-5 rounded-sm py-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 rounded-sm py-10'>
                 {reasons.length > 0 && reasons.map(reason => (
                     <ReasonCard reason={reason} key={reason.title} />
                 ))}

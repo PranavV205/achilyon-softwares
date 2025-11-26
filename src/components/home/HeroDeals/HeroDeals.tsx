@@ -3,9 +3,10 @@ import DealCard from "./DealCard"
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
 import SectionHeader from "@/components/common/SectionHeader"
 import Container from "@/components/common/Container"
+import { DealResponse } from "@/lib/interfaces/deal.interface"
 
 
-function HeroDeals({ deals }) {
+function HeroDeals({ deals }: { deals: DealResponse | undefined }) {
 
     return (
         <Container variant="primary">
