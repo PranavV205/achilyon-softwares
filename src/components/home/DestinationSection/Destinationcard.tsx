@@ -12,7 +12,7 @@ function DestinationCard({ destination }: { destination: Destination }) {
             >
                 <Image
                     src={destination.image}
-                    alt={"Peru"}
+                    alt={destination.name}
                     fill
                     className="object-cover transition-transform hover:scale-105"
                     sizes="(max-width: 640px) 280px, 
